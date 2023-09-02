@@ -1,0 +1,34 @@
+{
+	"name": "load the 2021 file into SQLDB pipeline",
+	"properties": {
+		"activities": [
+			{
+				"name": "Data flow - load the 2021 file into SQLDB",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "load ds_dl_nycpayroll_2021  to ds_sqlcurrent2021 dataflow",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-09-01T23:18:14Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
