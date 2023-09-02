@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "Project4ADF"
+		},
+		"ls_AzureDataLakeStorage_nyc_accountKey": {
+			"value": ""
+		},
+		"ls_AzureSqlDatabase1_nyc_connectionString": {
+			"value": ""
+		},
+		"ls_AzureSynapseAnalytics_nyc_connectionString": {
+			"value": ""
+		},
+		"ls_AzureDataLakeStorage_nyc_properties_typeProperties_url": {
+			"value": "https://storageacctnycproject.dfs.core.windows.net/"
+		}
+	}
+}
